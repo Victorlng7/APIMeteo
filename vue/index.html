@@ -6,7 +6,9 @@
 </head>
 
 <body>
+    <h1>ApiMeteo</h1>
     <div id="Input">
+        <h3>Recherche de la ville </h3>
         <input
             type="text"
             placeholder="Entrez le nom d'une ville"
@@ -15,7 +17,35 @@
 
         <input type="button" value="Rechercher" id="btnRechercher" />
     </div>
+
     <div id="output">
-        <input type="text" id="retourMeteo" />
+        <h3>Résultats Météo</h3>
+
+        <div>
+            <label for="meteo-ville">Ville :</label>
+            <input type="text" id="meteo-ville" readonly />
+        </div>
+        <div>
+            <label for="meteo-temp">Température (°C) :</label>
+            <input type="text" id="meteo-temp" readonly />
+        </div>
+        <div>
+            <label for="meteo-desc">Météo :</label>
+            <input type="text" id="meteo-main" readonly />
+        </div>
+        <div>
+            <label for="meteo-desc">Desctiprion :</label>
+            <input type="text" id="meteo-desc" readonly />
+        </div>
+        <div>
+            <label for="meteo-vent">Vitesse du vent (km/h) :</label>
+            <input type="text" id="meteo-vent" readonly />
+        </div>
+        <div>
+            <label for="meteo-humi">Humidité (%) :</label>
+            <input type="text" id="meteo-humi" readonly />
+        </div>
     </div>
 </body>
+
+<script type="module" src="../dist/script.js"></script>

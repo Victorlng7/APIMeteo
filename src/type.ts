@@ -1,5 +1,12 @@
-export type meteoType = {
+export type EnvoieValeurs = {
     envoiValeur: HTMLInputElement;
     btnRechercher: HTMLInputElement;
-    retourMeteo: HTMLInputElement;
+};
+export type ValeursRecu = {
+    meteoVille: HTMLInputElement;
+    meteoTemp: HTMLInputElement;
+    meteoMain: HTMLInputElement;
+    meteoDesc: HTMLInputElement;
+    meteoVent: HTMLInputElement;
+    meteoHumi: HTMLInputElement;
 };
